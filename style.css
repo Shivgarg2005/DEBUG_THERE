@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF; /* Text color: White */
+    font-family: Arial, sans-serif;
+    background-image: url(7438475.jpg); /* Background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* This ensures that the background image scrolls with the content */
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+
+.heading {
+    font-size: 100px;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #3498DB, #2C3E50); /* Gradient background for heading */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.welcome {
+    font-size: 50px;
+    margin-top: 80px;
+    margin-bottom: 2rem;
+    top: 60px;
+    left: 210px;
+    position: absolute;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input[type="file"],
+select,
+button {
+    margin-bottom: 1rem;
+    width: 80%;
+    font-size: 24px; /* Adjust font size for consistency */
+    padding: 10px; /* Add padding for better button appearance */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+select {
+    width: 30%;
+}
+
+#video-input {
+    width: 80%;
+}
+
+#video-upload-button {
+    width: 80%;
+    background-color: #3498DB; /* Accent Color 1: Dodger Blue */
+}
+
+.result {
+    display: none;
+}
+
+.result.visible {
+    display: block;
+}
+
+/* Increase font size of the "Upload your video" and "Select voiceover language" labels */
+#video-form label {
+    font-size: 51px;
+    font-weight: bold;
+}

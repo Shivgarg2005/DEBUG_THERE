@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Dubbing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">DubFiY</h1>
+        <h2 class="welcome">Welcome, user!</h2>
+        <section>
+        <form id="video-form" style="text-align: center;">
+            <label for="video-input">Upload your video:</label>
+            <input type="file" id="video-input" accept="video/*" required><br>
+            <label for="language-select">Select voiceover language:</label>
+            <select id="language-select">
+                <option value="hi-IN">Hindi</option>
+                <option value="en-US">English</option>
+                <option value="es-ES">Spanish</option>
+                <option value="fr-FR">French</option>
+                <option value="de-DE">German</option>
+                <option value="ja-JP">Japanese</option>
+                <option value="zh-CN">Chinese</option>
+            </select><br>
+            <button type="submit">Generate Dubbed Video</button>
+        </form>
+        </section>
+        <div id="result" class="hidden">
+            <h2>Dubbed Video</h2>
+            <video id="result-video" width="100%" controls></video>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
